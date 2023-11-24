@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{post.full_name}}</h1>
+    <br>
+    <h3>{{post.body}}</h3>
+    {% for image in img%}
+    <img style="width: 200px; height: 200px;" src="/media/{{image.img}}">
+    {% endfor %}
+</body>
+</html>
